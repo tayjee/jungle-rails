@@ -1,2 +1,16 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<section id="dashboard-container">
+<header class="page-header">
+  <h1>Admin Dashboard</h1>
+  </header>
+    <div class="counts">
+    <div class="products">
+    <span class="glyphicon glyphicon-shopping-cart"> </span>
+      <h3>Number of Products: <%= @products %> </h3>
+        </div>
+        <div class="categories">
+        <span class="glyphicon glyphicon-tags"> </span>
+            <h3>Number of Categories: <%= @categories %></h3>
+        </div>
+    </div>
+    <%= link_to '<button type="button" class="btn btn-primary" >Products List</button>'.html_safe, '/admin/products' %>
+</section>

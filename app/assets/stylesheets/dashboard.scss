@@ -1,0 +1,30 @@
+  .counts {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    gap: 10px;
+  }
+  
+  .categories {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #000;
+    padding: 5px;
+    width: 33%;
+    align-items: center;
+    justify-content: space-evenly;
+  } 
+
+  .products {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #000;
+    padding: 5px;
+    width: 33%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .glyphicon {
+    font-size: 18px;
+  }
