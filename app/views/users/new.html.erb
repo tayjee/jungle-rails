@@ -1,0 +1,14 @@
+<section class="sign-up">
+<header class="page-header">
+Signup!
+</header>
+<%= form_for :user, url: '/users' do |f| %>
+  <div class="sign-up-form">
+  First Name: <%= f.text_field :first_name %>
+  Last Name: <%= f.text_field :last_name %>
+  Email: <%= f.text_field :email %>
+  Password: <%= f.password_field :password %>
+  Password Confirmation: <%= f.password_field :password_confirmation %>
+  <%= f.submit "Submit" %>
+  </div>
+<% end %>
